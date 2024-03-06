@@ -73,12 +73,15 @@ div.item-description{
 
 .my-thumbnails{
    /* background-color: violet; */
-   height: 160px;
    border: 1px solid;
    flex-basis: 20%;
-    height: 25%;
+    height: 30%;
     display: flex;
     position: relative;
+}
+
+.my-thumbnail.active {
+  width: 100%;
 }
 
 .my-thumbnails .my-thumbnail img{
