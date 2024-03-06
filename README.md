@@ -52,3 +52,5 @@ Attenzione: dopo l’ultima slide deve riapparire la prima e così via
   - concateno
 
 3. togliere hide dalla prima immagine
+
+4. al click delle frecce l'immagine deve cambiare

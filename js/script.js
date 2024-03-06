@@ -72,15 +72,15 @@ elementiCollection[0].classList.remove('hide');
 // incremento bottone sotto
 sotto.addEventListener('click', function(){
   // quando clicco la freccia aggiungo hide all'incremento
-  fotoCollection[counterImg++].classList.add('hide');
+  elementiCollection[counterImg++].classList.add('hide');
   
   // se il contatore è maggiore o uguale alla lunghezza delle immagini, ritorna a 0
-  if(counterImg >= fotoCollection.length){
+  if(counterImg >= elementiCollection.length){
     counterImg = 0;
   }
 
   // img corrente
-  fotoCollection[counterImg].classList.remove('hide');
+  elementiCollection[counterImg].classList.remove('hide');
 })
 
 
@@ -89,7 +89,7 @@ sopra.addEventListener('click', function(){
   console.log(counterImg);
   
   // img corrente
-  fotoCollection[counterImg].classList.add('hide');
+  elementiCollection[counterImg].classList.add('hide');
 
   if(counterImg === 0){
     counterImg = images.length-1;
@@ -98,7 +98,7 @@ sopra.addEventListener('click', function(){
   }
 
   // quando clicco la freccia tolgo hide al decremento
-  fotoCollection[counterImg].classList.remove('hide');
+  elementiCollection[counterImg].classList.remove('hide');
 })
 
 let slideAutomatico = setInterval(() =>{
