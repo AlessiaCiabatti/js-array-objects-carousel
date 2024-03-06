@@ -60,7 +60,7 @@ for (let i = 0; i < images.length; i++){
   `
   allThumbnails.innerHTML += `
   <div class="my-thumbnail active">
-    <img class="img-fluid" src="${img.url}" alt="Thumbnail of Svezia picture">
+    <img class="img-fluid miniature" src="${img.url}" alt="Thumbnail of Svezia picture">
   </div>
   `
   
@@ -70,11 +70,15 @@ for (let i = 0; i < images.length; i++){
 // 3
 // prendo tutte le immagini e devo dargli una classe direttamente qui su js: elements
 const elementiCollection = document.getElementsByClassName('elements');
+const allThumbnailsCollection = document.getElementsByClassName('miniature');
 // getElementsByClassName restituisce un HTML COLLECTION: un array che come elementi contiene un elemento html
 
 // identifico il primo elemento e tolgo hide
 elementiCollection[0].classList.remove('hide');
 
+allThumbnailsCollection[0].addEventListener('click', function(){
+  console.log('ciao');
+})
 // 4
 // incremento bottone sotto
 sotto.addEventListener('click', function(){
