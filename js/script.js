@@ -76,9 +76,15 @@ const allThumbnailsCollection = document.getElementsByClassName('miniature');
 // identifico il primo elemento e tolgo hide
 elementiCollection[0].classList.remove('hide');
 
-allThumbnailsCollection[0].addEventListener('click', function(){
-  console.log('ciao');
-})
+///////////////////////RICHIEDERE
+for (let i = 0; i < allThumbnailsCollection.length; i++){
+  allThumbnailsCollection[i].addEventListener('click', function(){
+    elementiCollection[i].classList.remove('hide');
+    console.log(elementiCollection[i]);
+    console.log('ciao');
+  })
+}
+
 // 4
 // incremento bottone sotto
 sotto.addEventListener('click', function(){
