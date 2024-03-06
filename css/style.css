@@ -52,22 +52,14 @@ justify-content: center;
   transform: translateX(-50%);
 }
 
+.elements{
+  height: 100%;
+}
+
 .btn-arrow:hover{
   cursor: pointer;
   background-color: gray;
   color: white;
-}
-
-div.my-carousel-item{
-  height: 100%;
-  position: relative;
-  display: none;
-}
-
-div.my-carousel-item img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 div.item-description{
@@ -78,3 +70,19 @@ div.item-description{
   text-align: end;
   text-shadow: 2px 2px 2px black;
 }
+
+.my-thumbnails{
+   /* background-color: violet; */
+   height: 160px;
+   border: 1px solid;
+   flex-basis: 20%;
+    height: 25%;
+    display: flex;
+    position: relative;
+}
+
+.my-thumbnails .my-thumbnail img{
+  height: 100%;
+  width: 100%;
+}
+

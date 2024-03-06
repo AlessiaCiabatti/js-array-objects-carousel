@@ -17,7 +17,7 @@ const images = [
   {
       url: 'http://www.viaggiareonline.it/wp-content/uploads/2014/11/sweden_148857365.jpg',
       title: 'Svezia',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
+      description: 'ciao ciao ciao.'
   },
 
   {
@@ -50,7 +50,7 @@ for (let i = 0; i < images.length; i++){
   // console.log(img)
   allImg.innerHTML += `
   <div class="elements hide">
-    <img class="img-fluid" src="${img.url}" alt="${img.title} picture">
+    <img class="img-fluid" src="${img.url}" picture">
     <div class="item-description px-3">
         <h2>${img.title}</h2>
         <p>${img.description}</p>

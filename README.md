@@ -57,3 +57,5 @@ Attenzione: dopo l’ultima slide deve riapparire la prima e così via
 
 5. le immagini devono scorrere automaticamente
   - mouseover e mouseout
+
+6. realizzare HTML CSS miniature
