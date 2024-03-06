@@ -2,6 +2,7 @@ const slider = document.querySelector('.slider');
 // richiamo container di tutte le img: all-img
 const allImg = document.querySelector('.all-images');
 // adesso nel for concateno allImg += 
+const allThumbnails = document.querySelector('.my-thumbnails')
 
 // 4
 // richiamo bottoni
@@ -57,6 +58,12 @@ for (let i = 0; i < images.length; i++){
     </div>
   </div>
   `
+  allThumbnails.innerHTML += `
+  <div class="my-thumbnail active">
+    <img class="img-fluid" src="${img.url}" alt="Thumbnail of Svezia picture">
+  </div>
+  `
+  
   // in questo modo ho tutte le immagini
 }
 
