@@ -48,5 +48,7 @@ Attenzione: dopo l’ultima slide deve riapparire la prima e così via
  - titolo
  - descrizione
 
-2. ciclare array di oggetti
+2. realizzare un ciclo e richiamare in js il contenitore delle img, title, e p
   - concateno
+
+3. togliere hide dalla prima immagine

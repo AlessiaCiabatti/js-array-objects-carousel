@@ -57,3 +57,24 @@ justify-content: center;
   background-color: gray;
   color: white;
 }
+
+div.my-carousel-item{
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+div.my-carousel-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+div.item-description{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  text-align: end;
+  text-shadow: 2px 2px 2px black;
+}
