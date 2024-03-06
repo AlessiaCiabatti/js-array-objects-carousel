@@ -54,3 +54,6 @@ Attenzione: dopo l’ultima slide deve riapparire la prima e così via
 3. togliere hide dalla prima immagine
 
 4. al click delle frecce l'immagine deve cambiare
+
+5. le immagini devono scorrere automaticamente
+  - mouseover e mouseout

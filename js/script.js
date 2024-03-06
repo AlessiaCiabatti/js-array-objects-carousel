@@ -61,7 +61,7 @@ for (let i = 0; i < images.length; i++){
 }
 
 // 3
-// prendo tutte le immagini e devo dargli una classe direttamente qui su js: foto
+// prendo tutte le immagini e devo dargli una classe direttamente qui su js: elements
 const elementiCollection = document.getElementsByClassName('elements');
 // getElementsByClassName restituisce un HTML COLLECTION: un array che come elementi contiene un elemento html
 
@@ -103,59 +103,38 @@ sopra.addEventListener('click', function(){
 
 let slideAutomatico = setInterval(() =>{
     // quando clicco la freccia aggiungo hide all'incremento
-  fotoCollection[counterImg++].classList.add('hide');
+    elementiCollection[counterImg++].classList.add('hide');
   
   // se il contatore è maggiore o uguale alla lunghezza delle immagini, ritorna a 0
-  if(counterImg >= fotoCollection.length){
+  if(counterImg >= elementiCollection.length){
     counterImg = 0;
   }
 
   // img corrente
-  fotoCollection[counterImg].classList.remove('hide');
+  elementiCollection[counterImg].classList.remove('hide');
 },3000)
 
 // meglio mouseenter
 slider.addEventListener('mouseover', () =>{
+  console.log('mouseover attivato');
   clearInterval(slideAutomatico);
-  console.log('sto entrando')
 })
 
 // meglio mouseleave
 // quando voglio far riaprtire nuovamente il timer devo ricopiare tutto slideAutomatico, quindi quando il cursore si sposta fuori, devo ridare tutte le opzioni che ho dato per far muovere le immagini
 slider.addEventListener('mouseout', () =>{
+  console.log('mouseout attivato');
   slideAutomatico = setInterval(() =>{
     // quando clicco la freccia aggiungo hide all'incremento
-  fotoCollection[counterImg++].classList.add('hide');
+    elementiCollection[counterImg++].classList.add('hide');
   
   // se il contatore è maggiore o uguale alla lunghezza delle immagini, ritorna a 0
-  if(counterImg >= fotoCollection.length){
+  if(counterImg >= elementiCollection.length){
     counterImg = 0;
   }
 
   // img corrente
-  fotoCollection[counterImg].classList.remove('hide');
+  elementiCollection[counterImg].classList.remove('hide');
 },3000)
-  console.log('sto uscendo')
 })
 
-// if(slider.onmouseenter){
-//   console.log('hover');
-// }
-
-
-// Bottone “Incremento” (sotto):
-// Quando viene cliccato, viene eseguito il seguente codice:
-// Aggiunge la classe CSS “hide” all’immagine corrente (quella visualizzata).
-// Incrementa il contatore counterImg.
-// Se il contatore supera o è uguale alla lunghezza totale delle immagini (fotoCollection), lo riporta a 0.
-// Rimuove la classe “hide” dall’immagine corrente successiva.
-// In pratica, questo bottone passa all’immagine successiva.
-
-// Bottone “Decremento” (sopra):
-// Quando viene cliccato, viene eseguito il seguente codice:
-// Aggiunge la classe CSS “hide” all’immagine corrente.
-// Controlla se il contatore è uguale a 0:
-// Se sì, imposta il contatore all’indice dell’ultima immagine.
-// Altrimenti, decrementa il contatore.
-// Rimuove la classe “hide” dall’immagine corrente.
-// In pratica, questo bottone passa all’immagine precedente.
